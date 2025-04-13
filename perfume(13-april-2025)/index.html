@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfume</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><i class='bx bx-unite'></i> Ashez </a>
+
+        <!-- Menu Icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Nav Links -->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            
+            <!-- Fragrances Dropdown -->
+            <li class="dropdown">
+                <a href="#categories" class="nav-link">Fragrances <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="fragrance.html">All Fragrances</a>
+                    <a href="#">For Women</a>
+                    <a href="#">For Men</a>
+                    <a href="#">Unisex</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Gift Sets</a>
+                </div>
+            </li>
+            
+            <!-- Makeup Dropdown -->
+            <li class="dropdown">
+                <a href="#categories" class="nav-link">Makeup <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="#">All Makeup</a>
+                    <a href="#">Face</a>
+                    <a href="#">Eyes</a>
+                    <a href="#">Lips</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#">New Collection</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Special Offers</a>
+                </div>
+            </li>
+            
+            <li><a href="#about">About</a></li>
+            <li><a href="#" class="cart-link">Cart <i class='bx bx-cart'></i><span class="cart-count">0</span></a></li>
+        </ul>
+
+        <!-- Auth Buttons -->
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn login-btn"><i class='bx bx-user'></i> Login</a>
+            <a href="signup.html" class="auth-btn signup-btn"><i class='bx bx-user-plus'></i> Signup</a>
+            <a href="#" class="night-mode-btn" id="night-mode-toggle"><i class='bx bx-moon'></i></a>
+        </div>
+    </header>
+    <!-- HOME --> 
+     <section class="home swiper-container" id="home">
+        <div class="swiper-wrapper">
+            <!-- Slide 1-->
+            <div class="swiper-slide slide-1">
+                <div class="home-text">
+                    <span>The Art of Being Different</span>
+                    <h1>Discover the World of Parfumes<br> Our sole ambition: Work with love and dedication to create our Parfumes</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bxs-right-arrow-alt'></i></a>
+                </div>
+            </div>
+           <!-- Slide 2-->
+           <div class="swiper-slide slide-2">
+                <div class="home-text">
+                    <span>The Art of Being Different</span>
+                    <h1>Discover the World of Parfumes<br>Our sole ambition: Work with love and dedication to create our Parfumes</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bxs-right-arrow-alt'></i></a>
+                </div>
+            </div>
+            <!-- Slide 3-->
+           <div class="swiper-slide slide-3">
+                <div class="home-text">
+                    <span>The Art of Being Different</span>
+                    <h1>Discover the World of Parfumes<br>Our sole ambition: Work with love and dedication to create our Parfumes</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bxs-right-arrow-alt'></i></a>
+                </div>
+            </div>
+            <!-- Slide 4-->
+            <div class="swiper-slide slide-4">
+                <div class="home-text">
+                    <span>The Art of Being Different</span>
+                    <h1>Discover the World of Parfumes<br>Our sole ambition: Work with love and dedication to create our Parfumes</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bxs-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+     </section>
+
+     <!-- Perfume Showcase Slider -->
+     <section class="perfume-slider" id="categories">
+        <h2>DISCOVER OUR PERFUMES</h2>
+        <div class="swiper perfumeSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="perfume-card">
+                        <img src="img/perfume1.png" alt="l'inspiratrice">
+                        <div class="perfume-info">
+                            <h3>l’être aimé</h3>
+                            <p>NEW INTERPRETATION<br>100ml splash bottle</p>
+                            <span>135,00€</span>
+                            <a href="#" class="buy-btn">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="perfume-card">
+                        <img src="img/perfume2.png" alt="l'inspiratrice">
+                        <div class="perfume-info">
+                            <h3>divine</h3>
+                            <p>100ml,200ml splash bottle</p>
+                            <span>135,00€</span>
+                            <a href="#" class="buy-btn">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="perfume-card">
+                        <img src="img/perfume3.png" alt="spirituelle">
+                        <div class="perfume-info">
+                            <h3>spirituelle</h3>
+                            <p><strong>NEW</strong> 50ml refillable spray</p>
+                            <span>97,00€</span>
+                            <a href="#" class="buy-btn">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="perfume-card">
+                        <img src="img/perfume4.png" alt="spirituelle">
+                        <div class="perfume-info">
+                            <h3>spirituelle</h3>
+                            <p>100ml refillable spray</p>
+                            <span>155,00€</span>
+                            <a href="#" class="buy-btn">BUY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+     <!-- Instagram Follow Section -->
+     <section class="instagram-follow" id="customer">
+        <div class="instagram-content">
+            <h2>#ASHEZ_OFFICIAL</h2>
+            <p>Follow us on Instagram</p>
+            <div class="instagram-photos">
+                <a href="https://www.instagram.com/p/DFvKZVxC6rN/" target="_blank">
+                    <img src="img\insta1.png" alt="Instagram Photo 1">
+                </a>
+                <a href="https://www.instagram.com/p/DFsVpKZie7C/" target="_blank">
+                    <img src="img\insta2.png" alt="Instagram Photo 2">
+                </a>
+                <a href="https://www.instagram.com/p/DFpXFBKCTpK/" target="_blank">
+                    <img src="img\insta3.png" alt="Instagram Photo 3">
+                </a>
+                <a href="https://www.instagram.com/p/DE8S0gSiBFc/" target="_blank">
+                    <img src="img\insta4.png" alt="Instagram Photo 4">
+                </a>
+            </div>
+        </div>
+     </section>
+    <!-- Footer Section -->
+<footer class="footer" id="about">
+    <div class="footer-content">
+        <!-- Discover Our Creations -->
+        <div class="footer-section">
+            <div class="footer-icon">
+                <i class='bx bx-gift'></i>
+            </div>
+            <h3>DISCOVER OUR CREATIONS</h3>
+            <p>For each order, choose 2 samples. To discover or to offer.</p>
+        </div>
+
+        <!-- Worldwide Delivery -->
+        <div class="footer-section">
+            <div class="footer-icon">
+                <i class='bx bx-world'></i>
+            </div>
+            <h3>WORLDWIDE DELIVERY</h3>
+            <p>We prepare each order with great care and deliver your order wherever you are.</p>
+        </div>
+
+        <!-- Free Returns -->
+        <div class="footer-section">
+            <div class="footer-icon">
+                <i class='bx bx-refresh'></i>
+            </div>
+            <h3>FREE RETURNS</h3>
+            <p>A doubt? We will find together the best solution for you.</p>
+        </div>
+
+        <!-- The Divine Line -->
+        <div class="footer-section">
+            <div class="footer-icon">
+                <i class='bx bx-phone'></i>
+            </div>
+            <h3>THE DIVINE LINE</h3>
+            <p>Contact us on +33 2 99 46 56 41. Monday to Friday, 9AM to 5 PM.</p>
+        </div>
+
+        <!-- Keep in Touch -->
+        <div class="footer-section">
+            <h3>KEEP IN TOUCH</h3>
+            <p>Subscribe to our monthly newsletter:</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="email@example.org" required>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+        <!-- Infos -->
+        <div class="footer-section">
+            <h3>INFOS</h3>
+            <ul>
+                <li><a href="#">Blog & Press</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Join us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- My Order -->
+        <div class="footer-section">
+            <h3>MY ORDER</h3>
+            <ul>
+                <li><a href="#">Secure payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Return within 30 days</a></li>
+                <li><a href="#">Paper Order</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright and Policies -->
+    <div class="footer-bottom">
+        <p>© 2025 ASHEZ • <a href="#">Confidentiality and Cookies policy</a> • <a href="#">Legal notice</a> • <a href="#">General Terms and Conditions</a></p>
+    </div>
+</footer>
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Link to Js-->
+    <script src="main.js"></script>
+</body>
+</html>

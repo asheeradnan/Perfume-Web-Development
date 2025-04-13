@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashez - Login</title>
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="stylesLogin.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo"><i class='bx bx-unite'></i> Ashez </a>
+
+        <!-- Menu Icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Nav Links -->
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            
+            <!-- Fragrances Dropdown -->
+            <li class="dropdown">
+                <a href="index.html#categories" class="nav-link">Fragrances <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="fragrance.html">All Fragrances</a>
+                    <a href="#">For Women</a>
+                    <a href="#">For Men</a>
+                    <a href="#">Unisex</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Gift Sets</a>
+                </div>
+            </li>
+            
+            <!-- Makeup Dropdown -->
+            <li class="dropdown">
+                <a href="index.html#categories" class="nav-link">Makeup <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="#">All Makeup</a>
+                    <a href="#">Face</a>
+                    <a href="#">Eyes</a>
+                    <a href="#">Lips</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#">New Collection</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Special Offers</a>
+                </div>
+            </li>
+            
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#" class="cart-link">Cart <i class='bx bx-cart'></i><span class="cart-count">0</span></a></li>
+        </ul>
+
+        <!-- Auth Buttons -->
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn login-btn home-active"><i class='bx bx-user'></i> Login</a>
+            <a href="signup.html" class="auth-btn signup-btn"><i class='bx bx-user-plus'></i> Signup</a>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-form-container">
+            <h2>LOGIN</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username or email address</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <button type="submit" class="submit-btn">LOGIN</button>
+                <p class="forgot-password"><a href="forgot-password.html">Forgot your password?</a></p>
+            </form>
+            <div class="auth-alt-action">
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </div>
+        </div>
+
+        <div class="help-services">
+            <h2>HELP & SERVICES</h2>
+            <ul>
+                <li><a href="#"><i class='bx bx-envelope'></i> Contact Us</a></li>
+                <li><a href="#"><i class='bx bx-world'></i> Shipping</a></li>
+                <li><a href="#"><i class='bx bx-refresh'></i> Return</a></li>
+                <li><a href="#"><i class='bx bx-file'></i> Paper Order</a></li>
+                <li><a href="#"><i class='bx bx-help-circle'></i> FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ASHEZ • <a href="#">Confidentiality and Cookies policy</a> • <a href="#">Legal notice</a> • <a href="#">General Terms and Conditions</a></p>
+    </footer>
+
+    <script src="scriptLogin.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

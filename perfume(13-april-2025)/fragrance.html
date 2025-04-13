@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashez - Fragrances Collection</title>
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesfragrance.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo"><i class='bx bx-unite'></i> Ashez </a>
+
+        <!-- Menu Icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Nav Links -->
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            
+            <!-- Fragrances Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="nav-link home-active">Fragrances <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="#all-fragrances">All Fragrances</a>
+                    <a href="#women-fragrances">For Women</a>
+                    <a href="#men-fragrances">For Men</a>
+                    <a href="#unisex-fragrances">Unisex</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#new-arrivals">New Arrivals</a>
+                    <a href="#best-sellers">Best Sellers</a>
+                    <a href="#gift-sets">Gift Sets</a>
+                </div>
+            </li>
+            
+            <!-- Makeup Dropdown -->
+            <li class="dropdown">
+                <a href="index.html#categories" class="nav-link">Makeup <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="#">All Makeup</a>
+                    <a href="#">Face</a>
+                    <a href="#">Eyes</a>
+                    <a href="#">Lips</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#">New Collection</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Special Offers</a>
+                </div>
+            </li>
+            
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#" class="cart-link">Cart <i class='bx bx-cart'></i><span class="cart-count">0</span></a></li>
+        </ul>
+
+        <!-- Auth Buttons -->
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn login-btn"><i class='bx bx-user'></i> Login</a>
+            <a href="signup.html" class="auth-btn signup-btn"><i class='bx bx-user-plus'></i> Signup</a>
+            <a href="#" class="night-mode-btn" id="night-mode-toggle"><i class='bx bx-moon'></i></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="fragrance-hero" id="all-fragrances">
+        <div class="fragrance-hero-content">
+            <h1>DISCOVER THE ART OF SCENT</h1>
+            <p>Explore our exclusive collection of luxury fragrances</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="filter-group">
+            <label>Filter By:</label>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="unisex">Unisex</button>
+                <button class="filter-btn" data-filter="new">New</button>
+            </div>
+        </div>
+        <div class="sort-group">
+            <label for="sort-select">Sort By:</label>
+            <select id="sort-select" class="sort-select">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Fragrances Grid -->
+    <section class="fragrances-grid">
+        <!-- Row 1 -->
+        <div class="fragrance-item" data-category="women new">
+            <div class="fragrance-img-container">
+                <img src="img/perfume1.png" alt="L'être aimé">
+                <div class="fragrance-ribbon">NEW</div>
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">WOMEN • NEW</div>
+                <h3>l'être aimé</h3>
+                <p>NEW INTERPRETATION • 100ml splash bottle</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€135.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fragrance-item" data-category="women">
+            <div class="fragrance-img-container">
+                <img src="img/perfume2.png" alt="Divine">
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">WOMEN • BESTSELLER</div>
+                <h3>divine</h3>
+                <p>100ml, 200ml splash bottle</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€135.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fragrance-item" data-category="unisex new">
+            <div class="fragrance-img-container">
+                <img src="img/perfume3.png" alt="Spirituelle">
+                <div class="fragrance-ribbon">NEW</div>
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">UNISEX • NEW</div>
+                <h3>spirituelle</h3>
+                <p>50ml refillable spray</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€97.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="fragrance-item" data-category="unisex">
+            <div class="fragrance-img-container">
+                <img src="img/perfume4.png" alt="Spirituelle Large">
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">UNISEX • POPULAR</div>
+                <h3>spirituelle</h3>
+                <p>100ml refillable spray</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€155.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fragrance-item" data-category="men">
+            <div class="fragrance-img-container">
+                <img src="img/perfume3.png" alt="Moonlight">
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">MEN • EXCLUSIVE</div>
+                <h3>moonlight</h3>
+                <p>75ml eau de parfum</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€120.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fragrance-item" data-category="men new">
+            <div class="fragrance-img-container">
+                <img src="img/perfume1.png" alt="Ocean Breeze">
+                <div class="fragrance-ribbon">NEW</div>
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">MEN • NEW</div>
+                <h3>ocean breeze</h3>
+                <p>100ml eau de toilette</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€110.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="fragrance-item" data-category="women">
+            <div class="fragrance-img-container">
+                <img src="img/perfume2.png" alt="Rose Petal">
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">WOMEN • FLORAL</div>
+                <h3>rose petal</h3>
+                <p>50ml concentrated perfume</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€145.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fragrance-item" data-category="unisex">
+            <div class="fragrance-img-container">
+                <img src="img/perfume4.png" alt="Midnight Mystery">
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">UNISEX • LIMITED EDITION</div>
+                <h3>midnight mystery</h3>
+                <p>75ml eau de parfum</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€165.00</span>
+                    <span class="original-price">€195.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fragrance-item" data-category="unisex">
+            <div class="fragrance-img-container">
+                <img src="img/perfume3.png" alt="Amber Whisper">
+                <div class="fragrance-overlay">
+                    <div class="fragrance-actions">
+                        <a href="#" class="action-btn"><i class='bx bx-heart'></i></a>
+                        <a href="#" class="action-btn add-to-cart"><i class='bx bx-cart-add'></i></a>
+                        <a href="#" class="action-btn"><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fragrance-info">
+                <div class="fragrance-category">UNISEX • AMBER</div>
+                <h3>amber whisper</h3>
+                <p>100ml eau de parfum</p>
+                <div class="fragrance-price-container">
+                    <span class="fragrance-price">€140.00</span>
+                    <button class="quick-add">Quick Add</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Banner -->
+    <section class="collection-banner">
+        <div class="collection-content">
+            <h2>DISCOVER OUR GIFT SETS</h2>
+            <p>Perfect for any occasion or as a treat for yourself</p>
+            <a href="#gift-sets" class="banner-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>JOIN OUR WORLD</h2>
+            <p>Sign up to receive exclusive offers, fragrance inspiration and news</p>
+            <form class="newsletter-form fragrance-newsletter">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="footer-content">
+            <!-- Discover Our Creations -->
+            <div class="footer-section">
+                <div class="footer-icon">
+                    <i class='bx bx-gift'></i>
+                </div>
+                <h3>DISCOVER OUR CREATIONS</h3>
+                <p>For each order, choose 2 samples. To discover or to offer.</p>
+            </div>
+
+            <!-- Worldwide Delivery -->
+            <div class="footer-section">
+                <div class="footer-icon">
+                    <i class='bx bx-world'></i>
+                </div>
+                <h3>WORLDWIDE DELIVERY</h3>
+                <p>We prepare each order with great care and deliver your order wherever you are.</p>
+            </div>
+
+            <!-- Free Returns -->
+            <div class="footer-section">
+                <div class="footer-icon">
+                    <i class='bx bx-refresh'></i>
+                </div>
+                <h3>FREE RETURNS</h3>
+                <p>A doubt? We will find together the best solution for you.</p>
+            </div>
+
+            <!-- The Divine Line -->
+            <div class="footer-section">
+                <div class="footer-icon">
+                    <i class='bx bx-phone'></i>
+                </div>
+                <h3>THE DIVINE LINE</h3>
+                <p>Contact us on +33 2 99 46 56 41. Monday to Friday, 9AM to 5 PM.</p>
+            </div>
+
+            <!-- Keep in Touch -->
+            <div class="footer-section">
+                <h3>KEEP IN TOUCH</h3>
+                <p>Subscribe to our monthly newsletter:</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="email@example.org" required>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+
+            <!-- Infos -->
+            <div class="footer-section">
+                <h3>INFOS</h3>
+                <ul>
+                    <li><a href="#">Blog & Press</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Join us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- My Order -->
+            <div class="footer-section">
+                <h3>MY ORDER</h3>
+                <ul>
+                    <li><a href="#">Secure payment</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Return within 30 days</a></li>
+                    <li><a href="#">Paper Order</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright and Policies -->
+        <div class="footer-bottom">
+            <p>© 2025 ASHEZ • <a href="#">Confidentiality and Cookies policy</a> • <a href="#">Legal notice</a> • <a href="#">General Terms and Conditions</a></p>
+        </div>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Link to Js-->
+    <script src="main.js"></script>
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const fragranceItems = document.querySelectorAll('.fragrance-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    fragranceItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Quick add button functionality
+            const quickAddBtns = document.querySelectorAll('.quick-add');
+            
+            quickAddBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.innerText = 'Added ✓';
+                    this.classList.add('added');
+                    
+                    setTimeout(() => {
+                        this.innerText = 'Quick Add';
+                        this.classList.remove('added');
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
